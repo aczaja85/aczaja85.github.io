@@ -1,0 +1,88 @@
+
+div.dc
+{
+    background-image: url("https://brandslogos.com/wp-content/uploads/images/large/dc-logo.png");
+    background-attachment: scroll;
+    background-repeat: repeat-y;
+    background-size: 350px;
+    background-position: right;
+    padding: 0px 500px 0px 75px;
+    margin-left:25px;
+    margin-right: 50px;
+    margin-top: 0%;
+}
+
+h1.marvelheader
+{
+    background-color: rgb(253, 15, 15);
+    text-align: right;
+    text-indent: 50px;
+    font-size: 100px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+div.marvel
+{
+    background-image: url("https://logos-world.net/wp-content/uploads/2020/11/Marvel-Logo-2000-2012.png");
+    background-attachment: scroll;
+    background-repeat: repeat-y;
+    background-size: 350px;
+    background-position: left;
+    padding: 0px 75px 0px 500px;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 0%;
+    text-align: right justify;
+}
+h2.wonderwoman
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(206, 69, 69);
+    text-shadow: 2px 2px blue;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+h2.superman
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+    text-shadow: 2px 2px rgb(206, 69, 69);
+    text-decoration: underline;
+    letter-spacing: 3px;   
+}
+h2.spider
+{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    color:red;
+    text-shadow: 2px 2px black;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+h2.iron
+{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    color:gold;
+    text-shadow: 2px 2px red;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+h2.thor
+{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    text-shadow: 2px 2px gold;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+p
+{
+    text-align: justify;
+}
+
+			
+
+
+
