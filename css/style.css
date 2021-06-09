@@ -1,7 +1,7 @@
 
 div.dc
 {
-    background-image: url("https://brandslogos.com/wp-content/uploads/images/large/dc-logo.png");
+    background-image: url("../img/dc.png");
     background-attachment: scroll;
     background-repeat: repeat-y;
     background-size: 350px;
@@ -23,7 +23,7 @@ h1.marvelheader
 }
 div.marvel
 {
-    background-image: url("https://logos-world.net/wp-content/uploads/2020/11/Marvel-Logo-2000-2012.png");
+    background-image: url("../img/marvel.png");
     background-attachment: scroll;
     background-repeat: repeat-y;
     background-size: 350px;
