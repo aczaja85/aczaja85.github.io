@@ -1,0 +1,239 @@
+*{padding:0; margin:0;}
+
+/* square/rectangle shape for sky backgrond. This is also the parent div in which all elements (except moon and grass) are positioned*/
+div.sky
+{
+    background-color: skyblue;
+    height: 500px;
+    position: relative;
+}
+/* For eclipsed sun, adjust box-shadow property and border radious to create crescent shape. This is colored to gold to make the image of the sun that is being eclisped by the moon. The sun is the parent element for the moon and determines the moons position*/
+div.sun
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 gold;
+    position: relative;
+    top:35px;
+    left:600px;
+}
+/* For moon, adjust border-radius to create circle shape. background color black with gold border to give the moon the eclispe look. Position is   */
+div.moon
+{
+    background-color: black;
+    width:80px;
+    height: 80px;
+    border: solid 2px gold;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 20;
+    top:0px;
+    right:0px;   
+}
+/* Cloud #1 (circle at top right). adjust border-radius to create circle shape. C1 is postion absolute within the blue sky div */
+div.c1
+{
+background-color: #ACADAD;
+width:80px;
+height: 80px;
+border-radius: 50%;
+position: absolute;
+top:100px;
+right:70px;
+}
+/* Cloud #2 (circle to the left of C1). adjust border-radius to create circle shape. C2 is postion absolute within the parent blue sky div, top and right coordinates are based off C1 so it's just to the left of c1. Use adobe color wheel to change to different shade of grey */
+div.c2
+{
+background-color:#6D6E6D;
+width: 73px;
+height: 73px;
+border-radius: 50%;
+position: absolute;
+top:110px;
+right:140px;
+}
+/* Cloud #3 (circle to the left of C3). adjust border-radius to create circle shape. C3 is postion absolute within the parent blue sky div, top and right coordinates are based off C2 so it's just to the left and lower than c2. Use adobe color wheel to change to different shade of grey */
+div.c3
+{
+background-color:#c9c9c9;
+width:82px;
+height: 82px;
+border-radius: 50%;
+position: absolute;
+top:120px;
+right:210px;
+}
+/* Cloud #4 (circle to the left of C4). adjust border-radius to create circle shape. C4 is postion absolute within the parent blue sky div, top and right coordinates are based off C3 so it's just to the left and lower than c3. Use adobe color wheel to change to different shade of grey */
+div.c4
+{
+background-color:#D2D4D3;
+width:80px;
+height: 80px;
+border-radius: 50%;
+position: absolute;
+top:140px;
+right:280px;
+}
+/* Cloud #5 (circle below c1, far right on bottom row of clouds). adjust border-radius to create circle shape. C5 is postion absolute within the parent blue sky div, top and right coordinates are based off C1 so it's just below and slightly offset from C1. Use adobe color wheel to change to different shade of grey */
+div.c5
+{
+background-color:#D2D4D3;
+width:85px;
+height: 85px;
+border-radius: 50%;
+position: absolute;
+top:170px;
+right:95px;
+}
+/* Cloud #6 (circle to the left of c5). adjust border-radius to create circle shape. C6 is postion absolute within the parent blue sky div, top and right coordinates are based off C5 so it's to the left of c5. Use adobe color wheel to change to different shade of grey */
+div.c6
+{
+background-color:#979797;
+width:80px;
+height: 80px;
+border-radius: 50%;
+position: absolute;
+top:170px;
+right:170px;
+}
+/* Cloud #7 (circle to the left of c6). adjust border-radius to create circle shape. C7 is postion absolute within the parent blue sky div, top and right coordinates are based off C6 so it's to the left of c6. Use adobe color wheel to change to different shade of grey */
+div.c7
+{
+background-color:#777777;
+width:85px;
+height: 85px;
+border-radius: 50%;
+position: absolute;
+top:175px;
+right:240px;
+}
+/* Apply hover to all cloud elements, so when user moves over clouds they swell and look stormy. To do this, tranform scale so cloud grows larger when hovered over. Also set transition speed to 125ms so it slows this effect. */
+div.cloud:hover
+{
+transform: scale(115%);
+transition: 125ms;
+}
+/* For rain #1, create rectange box and only give blue rain color to the left and right border. This will give 2 rain stripes. Set border to dashed so it looks like rain. skew the shape by 15% so rain isn't falling straight down, and it so it looks like the cloud and rain is traveling to the left. Rain is positined within sky div. Top and right position is based off bottom left cloud (C7) */
+div.rain1
+{
+    height: 200px;
+    width: 50px;
+    border-right: dashed rgb(79, 79, 255);
+    border-left:dashed rgb(79, 79, 255);
+    position: absolute;
+    top:265px;
+    right:215px;
+    transform: skewX(15deg);
+
+}
+/* For rain #2 , create rectange box and only give blue rain color to the left and right border. This will give 2 rain stripes. Set border to dashed so it looks like rain. skew the shape by 15% so rain isn't falling straight down, and it so it looks like the cloud and rain is traveling to the left. Rain is positined within sky div. Top and right position is based off rain 1, just to left of rain1. */
+div.rain2
+{
+    height: 200px;
+    width: 50px;
+    border-right: dashed rgb(79, 79, 255);
+    border-left:dashed rgb(79, 79, 255);
+    position: absolute;
+    top:257px;
+    right:188px;
+    transform: skewX(15deg);
+}
+/* For rain #3 , create rectange box and only give blue rain color to the left and right border. This will give 2 rain stripes. Set border to dashed so it looks like rain. skew the shape by 15% so rain isn't falling straight down, and it so it looks like the cloud and rain is traveling to the left. Rain is positined within sky div. Top and right position is based off rain 2, just to left of rain2. */
+div.rain3
+{
+    height: 200px;
+    width: 40px;
+    border-right: dashed rgb(79, 79, 255);
+    border-left:dashed rgb(79, 79, 255);
+    position: absolute;
+    top:257px;
+    right:122px;
+    transform: skewX(15deg);
+}
+/* Create brown trapezoid shape for base of mountain. Adjust left and right border width and set to transparent to create trapeziod shape. Adjust bottom border width to determine hieght of trapeziod/hieght of mountain base. Set border-bottom color to solid and color brown. Position within sky div, place mountain base 1 in bottom left corner of sky div. */
+div.mountain1
+{
+ 
+    border-bottom: 250px solid #6E492D;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+      
+}
+/*For snow capped mountain top #1, create a white triangle shape and place it atop mountain base 1. for triangle , create box with zero height and width, set border-left,right, and bottom to the same widtd. Left*/
+div.mount-top1
+{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid white;
+    position: absolute;
+    bottom: 250px;
+    left: 24px;
+}
+/* For mountain base 2, copy shape of trapezoid used for mountain base 1. Position absolute within sky div. Position just to the right of mountain base 1.  */
+div.mountain2
+{
+ 
+    border-bottom: 250px solid #6E492D;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+      
+}
+/* For mountain top #2, copy the shape of top1. Position absolute within the blue sky div. Position directly above mountain-base 2. */
+div.mount-top2
+{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid white;
+    position: absolute;
+    bottom: 250px;
+    left: 174px;
+}
+/* For mountain base 3, copy shape of trapezoid used for mountain base 2. Position absolute within sky div. Position just to the right of mountain base 2. */
+div.mountain3
+{
+ 
+    border-bottom: 250px solid #6E492D;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+      
+}
+/* For mountain top #3, copy the shape of mount-top2. Position absolute within the blue sky div. Position directly above mountain-base 3. */
+div.mount-top3
+{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid white;
+    position: absolute;
+    bottom: 250px;
+    left: 324px;
+}
+
+
+/* For grass, give hieght of 200 px and background-color green */
+div.grass
+{
+    background-color: rgb(79, 196, 79);
+    height:200px;
+}
