@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap&effect=fire');
+html
+{
+background-image: url("../img/pizza-oven.jpg");
+background-size: cover;
+
+}
+nav
+{
+padding: 15px;
+background-color: transparent;
+text-align: right;
+}
+nav ul li, nav ul li a
+{
+display: inline-block;
+}
+.active
+{
+    color:#F27F3D;
+}
+nav ul li a:hover
+{
+color:grey;
+transform: scale(115%);
+}
+nav ul li a
+{
+    padding: 15px;
+    text-decoration: none;
+    font-family:'Josefin Sans', sans-serif;
+    color: whitesmoke;
+    border-radius: 50%;
+    transition: 500ms;
+   
+}
+.logo
+{
+    color:whitesmoke;
+    float:left;
+    font-size: 65px;
+    font-family:'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-shadow: 5px 5px 5px #F27F3D;
+}
+h1
+{
+    color: whitesmoke;
+    text-align: center;
+}
+
+p
+{
+    color: whitesmoke;
+    padding-left:125px 50px 125px 50px;
+    font-family:'Josefin Sans', sans-serif;
+}
