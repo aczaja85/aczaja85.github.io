@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap&effect=fire');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.home-background
+{
+    height: 800px;
+    background-image: url("../img/pizza-oven.jpg");
+    background-size: cover;
+    
+
+}
+.order-background
+{
+    background-image: url("../img/pizza-woodfire.jpg");
+    background-size:cover;
+}
+.about-background
+{
+    height: 800px;
+    background-image: url("../img/dough.jpg");
+    background-size:cover;
+}
+.contact-background
+{
+    height: 800px;
+    background-image: url("../img/pizza-rome.jpg");
+    background-size:cover;
+}
+nav
+{
+    padding: 15px;
+    background-color: transparent;
+    text-align: right;
+
+}
+nav ul li, nav ul li a
+{
+    display: inline-block;
+}
+#active
+{
+    color:#F27F3D;
+}
+nav ul li a:hover
+{
+    color:grey;
+    transform: scale(115%);
+}
+nav ul li a
+{
+    padding: 15px;
+    text-decoration: none;
+    font-family:'Josefin Sans', sans-serif;
+    color: whitesmoke;
+    border-radius: 50%;
+    transition: 500ms;
+   
+}
+.logo
+{
+    color:whitesmoke;
+    float:left;
+    font-size: 65px;
+    font-family:'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-shadow: 5px 5px 5px #F27F3D;
+}
+h1
+{
+    color: whitesmoke;
+    text-align: center;
+    font-family:'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #75A3BF;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+h1.about-header
+{
+    color: whitesmoke;
+    text-align: center;
+    font-family:'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #75A3BF;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-right:600px;
+}
+
+p.home-text
+{
+    color: whitesmoke;
+    padding:5px 150px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    text-align: left;
+}
+p.about-text
+{
+    color: whitesmoke;
+    padding:15px 100px;
+    margin-right:600px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    text-align: left;
+}
+.order-form
+{
+    margin:8px 175px;
+}
+input[type=radio]
+{
+    margin:10px 0px 10px 10px;
+}
+input[type=checkbox]
+{
+    margin:10px 0px 10px 10px;
+
+}
+
+fieldset
+{
+    color:whitesmoke;
+    font-family:'Montserrat', sans-serif;
+    border:none;
+    margin-top: 10px;
+}
+legend
+{
+    color:whitesmoke;
+    text-shadow:-.5px .5px 0 #F27F3D,.5px .5px 0 #F27F3D, .5px -.5px 0 #F27F3D, -.5px -.5px 0 #F27F3D;
+}
+input[type=text]
+{
+    margin:3px
+}
+input[type=reset]
+{
+    margin:10px 10px 30px 15px;
+    background-color:#F27F3D;
+}
+input[type=submit]
+{
+    margin:10px 10px 30px 15px;
+    background-color:#F27F3D;
+}
+
+
+footer
+{
+    background-color: #242424;
+    height: 800px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.footer-h1
+{
+    margin-top: 0;
+    padding-top: 100px;
+    font-family:'Montserrat', sans-serif;
+    font-style: normal;
+    text-shadow: none;
+    
+}
+hr
+{
+    width:30%;
+    box-shadow:2px 2px 5px #75A3BF;
+}
+.hours-box
+{
+    margin:130px 390px 30px 390px;
+    border:1px solid whitesmoke;
+    border-radius: 15px;
+    
+}
+.location-box
+{
+    margin:30px 390px;
+    border:1px solid whitesmoke;
+    border-radius: 15px;
+
+}
+h2
+{
+    color: #75A3BF;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+
+}
+p
+{
+    color: whitesmoke;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+}
+.img-box1
+{
+    height: 300px;
+    width: 300px;
+    background-image: url(../img/deep-dish.jpg);
+    background-size: cover;
+    background-position: center;
+    display:inline-block;
+    border-radius: 15%;
+}
+.img-box2
+{
+    height: 300px;
+    width: 300px;
+    background-image: url(../img/pizza-pep.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border-radius: 15%;
+}
+.img-box3
+{
+    height: 300px;
+    width: 300px;
+    background-image: url(../img/pizza-green.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border-radius: 15%;
+}
+.img-box
+{
+    margin-top:100px;
+    text-align: center;
+
+}
+
+nav.footer-nav
+{
+    margin-top: 75px;
+    margin-bottom: 0;
+    padding: 50px 15px 0 15px;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+nav.footer-nav ul li a
+{
+    padding: 15px 75px;
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;
+    border-radius: 50%;
+    transition: 500ms;
+   
+}
+.footer-logo
+{
+    padding: 15px 75px;
+    color:whitesmoke;
+    font-family: 'Monserrat', sans-serif;
+    font-style: italic;
+    
+}
+.contact-form
+{
+    font-family:'Monserrat', sans-serif;
+    color:whitesmoke;
+    text-shadow:-.5px .5px 0 #F27F3D,.5px .5px 0 #F27F3D, .5px -.5px 0 #F27F3D, -.5px -.5px 0 #F27F3D;
+    margin: 30px 150px;
+}
