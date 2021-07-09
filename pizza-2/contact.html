@@ -6,27 +6,29 @@
         <link rel="stylesheet" type="text/css" href="../css/pizza-2.css">
     </head>
     <body>
-        <nav>
-        <ul>
-            <li class="logo">CRUST</li>
-            <li><a href= "index.html">Home</a></li>
-            <li><a class="active" href= "contact.html">Contact</a></li>
-            <li><a href= "about.html">About</a></li>
-            <li><a href= "order.html">Order</a></li>
-        </ul>
-        </nav>
-        <h1>Contact Us</h1>
-        <form method= "post" action="https://www.stonecoldprofessor.com/pizza-contact.php">
-            <label for="first-name"></label>First Name:<br>
-            <input name="first-name" id="first-name" type="text"><br>
-            <label for="last-name"></label>Last Name:<br>
-            <input name="last-name" id="last-name" type="text"><br>
-            <label for="first-name"></label>Email:<br>
-            <input name="email" id="email" type="text"><br>
-            <label for="message"></label>Message:<br>
-            <textarea name="message" id="message" placeholder= "Talk to me!" cols="30" rows="10"></textarea><br>
-            <input type="reset" value="Clear">
-            <input type="submit" value="Send">
-        </form>
+        <main class="contact-background">
+            <nav>
+                <ul>
+                    <li class="logo">CRUST</li>
+                    <li><a href= "index.html">Home</a></li>
+                    <li><a href= "about.html">About</a></li>
+                    <li><a href= "order.html">Order</a></li>
+                    <li><a id="active" href= "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Contact Us</h1>
+            <form class="contact-form" method= "post" action="https://www.stonecoldprofessor.com/pizza-contact.php">
+                <label for="first-name"></label>First Name:<br>
+                <input name="first-name" id="first-name" type="text"><br>
+                <label for="last-name"></label>Last Name:<br>
+                <input name="last-name" id="last-name" type="text"><br>
+                <label for="first-name"></label>Email:<br>
+                <input name="email" id="email" type="text"><br>
+                <label for="message"></label>Message:<br>
+                <textarea name="message" id="message" placeholder= "Contact us!" cols="30" rows="10"></textarea><br>
+                <input type="reset" value="Clear">
+                <input type="submit" value="Send">
+            </form>
+        </main>
     </body>
 </html>    
