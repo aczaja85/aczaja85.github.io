@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../css/pizza-2.css">
     </head>
     <body>
-            <main class="order-background">
+        <main class="order-background">
             <nav>
             <ul>
                 <li class="logo">CRUST</li>
@@ -17,7 +17,7 @@
             </ul>
             </nav>
             <h1>Order</h1>
-            <form class="order-form" method="POST" action="http://www.stonecoldprofessor.com/pizza-order.php">
+            <form class="order-form" method= "post" action="http://www.stonecoldprofessor.com/pizza-order.php">
                 <fieldset>
                     <legend>Size</legend> 
                     <select name="size" id="size">
@@ -47,7 +47,7 @@
                     <input type="radio" id="bowling-alley" name="crust" value="bowling-alley">  
                     <label for="bowling-alley">Bowling Alley Style</label>
                     <input type="radio" id="frozen" name="crust" value="frozen">  
-                    <label for="slice">Frozen</label>
+                    <label for="frozen">Frozen</label>
                     <input type="radio" id="cold" name="crust" value="cold">  
                     <label for="cold">Next Morning Cold</label>
                     <input type="radio" id="gluten-free" name="size" value="gluten-free">  
@@ -74,7 +74,7 @@
                     <input type="checkbox" name="toppings[]" id="egg" value="egg">
                     <label for="egg">Egg</label><br>
                     <input type="checkbox" name="toppings[]" id="mushrooms" value="mushrooms">
-                    <label for="">Mushrooms</label>
+                    <label for="mushrooms">Mushrooms</label>
                     <input type="checkbox" name="toppings[]" id="black-olives" value="black-olives">
                     <label for="black-olives">Black olives</label>
                     <input type="checkbox" name="toppings[]" id="green-olives" value="green-olives">
@@ -106,14 +106,15 @@
                 </fieldset>
                 <fieldset>
                     <legend>Delivery Address</legend>
-                    <input name="first" id="first" type="text" placeholder="First Name" required>
-                    <input name="last" id="last" type="text" placeholder="Last Name" required><br>
-                    <input name="phone" id="phone" type="text" placeholder="Phone" required>
-                    <input name="email" id="email" type="text" placeholder="Email" required><br>
-                    <input name="add1" id="add1" type="text" placeholder="Address Line 1" required>
+                    <input name="first" id="first" type="text" placeholder="First Name">
+                    <input name="last" id="last" type="text" placeholder="Last Name"><br>
+                    <input name="phone" id="phone" type="text" placeholder="Phone">
+                    <input name="email" id="email" type="text" placeholder="Email"><br>
+                    <input name="add1" id="add1" type="text" placeholder="Address Line 1">
                     <input name="add2" id="add2" type="text" placeholder="Address Line 2" ><br>
-                    <input name="city" id="city" type="text" placeholder="City" required>
-                    <select name="state" id="state" required>
+                    <input name="city" id="city" type="text" placeholder="City">
+                    <select name="state" id="state">
+                        <option value="">State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -166,7 +167,7 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                     </select>
-                    <input name="zip" id="zip" type="text" placeholder="Zip" required><br>
+                    <input name="zip" id="zip" type="text" placeholder="Zip"><br>
                     <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Additional Instructions"></textarea><br>
                 </fieldset>
                 <input type="reset" value="Clear">
