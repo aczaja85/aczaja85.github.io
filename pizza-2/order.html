@@ -17,10 +17,11 @@
             </ul>
             </nav>
             <h1>Order</h1>
-            <form class="order-form" method= "post" action="http://www.stonecoldprofessor.com/pizza-order.php">
+            <form class="order-form" method="post" action="http://www.stonecoldprofessor.com/pizza-order.php">
                 <fieldset>
                     <legend>Size</legend> 
-                    <select name="size" id="size">
+                    <select name="size" id="pizza-size">
+                        <option value="">Choose size</option>
                         <option value="slice">Slice</option>
                         <option value="10in">10in</option>
                         <option value="12in">12in</option>
@@ -40,8 +41,8 @@
                     <label for="roman">Roman Style</label>
                     <input type="radio" id="ny" name="crust" value="ny">  
                     <label for="ny">New York Style</label>
-                    <input type="radio" id="detriot" name="crust" value="detriot">  
-                    <label for="detriot">Detroit Pan</label>
+                    <input type="radio" id="detroit" name="crust" value="detroit">  
+                    <label for="detroit">Detroit Pan</label>
                     <input type="radio" id="deepdish" name="crust" value="deepdish">  
                     <label for="deepdish">Chicago Deep Dish</label><br>
                     <input type="radio" id="bowling-alley" name="crust" value="bowling-alley">  
@@ -50,7 +51,7 @@
                     <label for="frozen">Frozen</label>
                     <input type="radio" id="cold" name="crust" value="cold">  
                     <label for="cold">Next Morning Cold</label>
-                    <input type="radio" id="gluten-free" name="size" value="gluten-free">  
+                    <input type="radio" id="gluten-free" name="crust" value="gluten-free">  
                     <label for="gluten-free">Gluten-Free</label>
                 </fieldset>
                 <fieldset>
@@ -94,27 +95,35 @@
                     <input type="checkbox" name="toppings[]" id="artichoke" value="artichoke">
                     <label for="artichoke">Artichoke</label>
                     <input type="checkbox" name="toppings[]" id="arugula" value="arugula">
-                    <label for="arugula">Arugula</label> <br>
+                    <label for="arugula">Arugula</label><br>
                     <input type="checkbox" name="toppings[]" id="garlic" value="garlic">
                     <label for="garlic">Garlic</label>
                     <input type="checkbox" name="toppings[]" id="spinach" value="spinach">
                     <label for="spinach">Spinach</label>
                     <input type="checkbox" name="toppings[]" id="sun-dried-tomato" value="sun-dried-tomato">
-                    <label for="sun-dried-tomato">Sun-dried tomatos</label>
+                    <label for="sun-dried-tomato">Sun-dried tomatoes</label>
                     <input type="checkbox" name="toppings[]" id="banana-pepper" value="banana-pepper">
                     <label for="banana-pepper">Banana pepper</label><br>
                 </fieldset>
                 <fieldset>
                     <legend>Delivery Address</legend>
-                    <input name="first" id="first" type="text" placeholder="First Name">
-                    <input name="last" id="last" type="text" placeholder="Last Name"><br>
-                    <input name="phone" id="phone" type="text" placeholder="Phone">
-                    <input name="email" id="email" type="text" placeholder="Email"><br>
-                    <input name="add1" id="add1" type="text" placeholder="Address Line 1">
-                    <input name="add2" id="add2" type="text" placeholder="Address Line 2" ><br>
-                    <input name="city" id="city" type="text" placeholder="City">
+                    <label for="first">First Name:</label><br>
+                    <input name="first" id="first" type="text"><br>
+                    <label for="last">Last Name:</label><br>
+                    <input name="last" id="last" type="text"><br>
+                    <label for="phone">Phone:</label><br>
+                    <input name="phone" id="phone" type="text"><br>
+                    <label for="email">Email:</label><br>
+                    <input name="email" id="email" type="text"><br>
+                    <label for="add1">Address Line 1:</label><br>
+                    <input name="add1" id="add1" type="text"><br>
+                    <label for="add2">Address Line 2:</label><br>
+                    <input name="add2" id="add2" type="text"><br>
+                    <label for="city">City:</label><br>
+                    <input name="city" id="city" type="text"><br>
+                    <label for="state">State:</label><br>
                     <select name="state" id="state">
-                        <option value="">State</option>
+                        <option></option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -166,9 +175,11 @@
                         <option value="WV">West Virginia</option>
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
-                    </select>
-                    <input name="zip" id="zip" type="text" placeholder="Zip"><br>
-                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Additional Instructions"></textarea><br>
+                    </select><br>
+                    <label for="zip">Zip:</label><br>
+                    <input name="zip" id="zip" type="text"><br>
+                    <label for="comments">Comments:</label><br>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
                 </fieldset>
                 <input type="reset" value="Clear">
                 <input type="submit" value="Order">
