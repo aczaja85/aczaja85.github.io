@@ -37,7 +37,7 @@ nav ul li, nav ul li a
 {
     display: inline-block;
 }
-#active
+.active
 {
     color:#F27F3D;
 }
