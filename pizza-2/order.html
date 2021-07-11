@@ -17,7 +17,7 @@
             </ul>
             </nav>
             <h1>Order</h1>
-            <form class="order-form" method="post" action="http://www.stonecoldprofessor.com/pizza-order.php">
+            <form class="order-form" method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
                 <fieldset>
                     <legend>Size</legend> 
                     <select name="size" id="pizza-size">
@@ -30,7 +30,7 @@
                         <option value="18in">18in</option>
                         <option value="20in">20in</option>
                         <option value="22in">22in</option>
-                        <option value="motherload">40in Motherload</option>
+                        <option value="40in-motherload">40in Motherload</option>
                     </select>
                 </fieldset>
                 <fieldset>
@@ -39,9 +39,9 @@
                     <label for="neapolitan">Neapolitan</label>
                     <input type="radio" id="roman" name="crust" value="roman">  
                     <label for="roman">Roman Style</label>
-                    <input type="radio" id="ny" name="crust" value="ny">  
+                    <input type="radio" id="ny" name="crust" value="ny-style">  
                     <label for="ny">New York Style</label>
-                    <input type="radio" id="detroit" name="crust" value="detroit">  
+                    <input type="radio" id="detroit" name="crust" value="detroit-pan">  
                     <label for="detroit">Detroit Pan</label>
                     <input type="radio" id="deepdish" name="crust" value="deepdish">  
                     <label for="deepdish">Chicago Deep Dish</label><br>
@@ -49,7 +49,7 @@
                     <label for="bowling-alley">Bowling Alley Style</label>
                     <input type="radio" id="frozen" name="crust" value="frozen">  
                     <label for="frozen">Frozen</label>
-                    <input type="radio" id="cold" name="crust" value="cold">  
+                    <input type="radio" id="cold" name="crust" value="next-morning-cold">  
                     <label for="cold">Next Morning Cold</label>
                     <input type="radio" id="gluten-free" name="crust" value="gluten-free">  
                     <label for="gluten-free">Gluten-Free</label>
@@ -107,22 +107,14 @@
                 </fieldset>
                 <fieldset>
                     <legend>Delivery Address</legend>
-                    <label for="first">First Name:</label><br>
-                    <input name="first" id="first" type="text"><br>
-                    <label for="last">Last Name:</label><br>
-                    <input name="last" id="last" type="text"><br>
-                    <label for="phone">Phone:</label><br>
-                    <input name="phone" id="phone" type="text"><br>
-                    <label for="email">Email:</label><br>
-                    <input name="email" id="email" type="text"><br>
-                    <label for="add1">Address Line 1:</label><br>
-                    <input name="add1" id="add1" type="text"><br>
-                    <label for="add2">Address Line 2:</label><br>
-                    <input name="add2" id="add2" type="text"><br>
-                    <label for="city">City:</label><br>
-                    <input name="city" id="city" type="text"><br>
-                    <label for="state">State:</label><br>
-                    <select name="state" id="state">
+                    <input name="first" id="first" type="text" placeholder="First Name" required>
+                    <input name="last" id="last" type="text" placeholder="Last Name" required><br>
+                    <input name="phone" id="phone" type="text" placeholder="Phone" required>
+                    <input name="email" id="email" type="text" placeholder="Email" required><br>
+                    <input name="add1" id="add1" type="text" placeholder="Address Line 1" required>
+                    <input name="add2" id="add2" type="text" placeholder="Address Line 2" ><br>
+                    <input name="city" id="city" type="text" placeholder="City" required>
+                    <select name="state" id="state" required>
                         <option value="">State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -176,14 +168,12 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                     </select><br>
-                    <label for="zip">Zip:</label><br>
-                    <input name="zip" id="zip" type="text"><br>
-                    <label for="comments">Comments:</label><br>
-                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+                    <input name="zip" id="zip" type="text" placeholder="Zip" required><br>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Comments"></textarea><br>
                 </fieldset>
                 <input type="reset" value="Clear">
                 <input type="submit" value="Order">
             </form>
         </main>
     </body>
-</html>  
+</html>
