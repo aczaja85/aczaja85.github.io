@@ -1,0 +1,10 @@
+body{
+    background-color: #9FA3A6;
+}
+h1{
+    color:#3a3b3b;
+    text-shadow: 2px 2px 8px #F2B705;
+}
+.hide{
+    display: none;
+}
